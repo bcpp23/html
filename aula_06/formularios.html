@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Formulários </title>
+</head>
+
+
+<body>
+    <h1> Trabalhando com tags formulários </h1>
+    <hr>
+    <p> Elementos para formulários são voltados á integração com o usuário, entrada de dados, seleção de opções,
+        processamento para manipulção
+        de dados entre outros.
+    </p>
+    <p> Formulários no HTML são somente uma <strong> Interface </strong></p>
+    <p> Pra que o formulário funcione, é necesário combiná- lo com <strong> linguagem de programação </strong></p>
+
+    <h2> Exemplos </h2>
+    <form action="#" method="post">
+        <p>
+            <label for=""> Nome: </label>
+            <input required type="text" id="name" name="nome" , placeholder="Nome completo" maxlength="200">
+        </p>
+
+        <p>
+            <label for="e-mail"> E-mail </label>
+            <input required type="e-mail" id="e-mail" name="e-mail", placeholder="E-mail">
+        </p>
+
+        <p>
+            <label for="telefone"> Telefone </label>
+            <input required type="telefone" id="telefone" name="telefone", placeholder="Telefone">    
+        </p>
+
+        
+        <p><strong> Você está Trabalhando? </strong></p>
+        <p> 
+            <input type="radio" id="sim" name="trabalha" value="SIM">
+            <label for="sim"> SIM </label>
+            <input type="radio" id="não" name="trabalha" value="NÃO"> <!--ele não quer as duas opções, ele quer que seja SIM ou Nâo e se vc colocar trabalha quer dizer que vc só pode usar um ou outro-->
+            <label for="nao"> NÂO </label>
+        </p>
+    
+
+    <p><strong> Interesses: </strong></p>
+    <p> 
+        <input type="checkbox" id="html5" name="Interesses">
+        <label for="html5"> HTML5 </label>
+        <input type="checkbox" id="css3" name="interesses">
+        <labe for="css3"> CSS3 </labe>
+        <input type="checkbox" id="javascript" name="interesses">
+        <label for="javascript"> Java Script </label>
+    </p>
+
+
+    <p> 
+        <label for="nascimento"> <strong> Nascimento: </strong></label> 
+        <input type="date" id="nascimento" name="nascimento">
+    </p>
+
+    <p> 
+        <label for="cor"><strong> Qual sua cor favorita </strong></label>
+        <input type="color" id="cor">
+    </p>
+
+    <p> 
+        <label for="idade"><strong> Idade: </strong></label>
+        <input type="number" id="idade" name="idade">
+    </p>
+
+    <p>
+        <label for="assunto"><strong> Assunto: </strong></label>
+        <select name="assunto" id="assunto"> 
+           <option value="" selected disabled hidden> selecione uma opção </option>
+            <option value="Elogios"> Elogios </option>
+            <option value="Reclamações"> Reclamações </option>
+            <option value="Outros"> Outros </option>
+        </select>
+
+        <p> 
+            <label for="mensagem"> Deixe sua mensagem </label>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5"> </textarea> <!--textarea significa uma area aonde vai ser inserida um texto-->
+        </p>
+        <button type="submit"><strong> Enviar </strong> </button>
+    </p>
+</form>
+</body>
+
+</html>
